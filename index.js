@@ -34,6 +34,7 @@ ChatRoom.prototype.init = function() {
 };
 
 ChatRoom.prototype.router = function(req, res) {
+  console.log("coming")
   if (req.url === '/') {
     res.writeHead(200, {
       'Content-Type': 'text/html;charset=utf-8'
