@@ -9,12 +9,11 @@ if(fs.existsSync(path.join(__dirname, 'config.js'))) {
 
 var PORT = 80;
 var PONG_DELTA = 10E3;
-var NOT_FOUNT_MSG = '小胡子哥提醒您：404 了！';
+var NOT_FOUNT_MSG = '404 了！';
 var FAVICON = fs.readFileSync(path.join(__dirname, 'favicon.ico'));
 var whiteList = [
   '0.0.0.0',
   '127.0.0.1',
-  'barret',
   'localhost',
   '120.79.149.137',
 ];
